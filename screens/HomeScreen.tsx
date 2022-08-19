@@ -70,7 +70,7 @@ export default function HomeScreen({
           { key: "browser-info", label: "Browser Information" },
           { key: "video-test", label: "Video Test Pages" },
           { key: "hypersay-current", label: "Hypersay Current" },
-          { key: "tunnel", label: "Hyperunnel" },
+          { key: "tunnel", label: "Hypertunnel" },
         ]}
         renderItem={({ item }) => (
           <TouchableOpacity onPress={() => onPress(item.key, item.label)}>
