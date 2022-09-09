@@ -20,6 +20,9 @@ export default function WebViewScreen(params: WebViewScreenParams) {
       source={{
         uri,
       }}
+      allowsInlineMediaPlayback
+      allowsLinkPreview={false}
+      allowsBackForwardNavigationGestures={false}
     />
   );
 }
