@@ -1,10 +1,8 @@
 import * as React from "react";
-import { View, Text, Button } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
-import {
-  createNativeStackNavigator,
-  NativeStackNavigationProp,
-} from "@react-navigation/native-stack";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
+import * as ScreenOrientation from "expo-screen-orientation";
 
 import HomeScreen from "./screens/HomeScreen";
 import VideoTestScreen from "./screens/VideoTestScreen";
@@ -20,6 +18,10 @@ export type RootStackParamList = {
 };
 
 function App() {
+  React.useEffect(() => {
+    ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.PORTRAIT);
+  }, []);
+
   return (
     <NavigationContainer>
       <Stack.Navigator>
