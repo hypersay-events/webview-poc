@@ -81,7 +81,7 @@ export default function HomeScreen({
         // @ts-ignore
         navigation.push("WebView", {
           title,
-          uri: "https://architecture-global-event-2022.hypersay.events/",
+          uri: `https://hypersay.events/lush/how-to-build-a-bath-bomb?code=${ticketCode}`,
         });
         break;
       case "tunnel-vercel":
@@ -95,7 +95,7 @@ export default function HomeScreen({
         // @ts-ignore
         navigation.push("WebView", {
           title,
-          uri: `https://paulbalogh-hs-lush.tunnel.hypersay.com/ro/my-first-lush-event?code=${ticketCode}`,
+          uri: `https://paulbalogh-hs-lush.tunnel.hypersay.com/my-first-lush-event?code=${ticketCode}`,
         });
         break;
       default:
